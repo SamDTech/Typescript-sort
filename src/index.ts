@@ -1,7 +1,12 @@
+import { NumbersCollection } from "./NumbersCollection";
+import { Sorter } from "./Sorter";
 
 
-const sorter = new Sorter([-3, -1, 8, 2]);
 
-sorter.sort();
+const numbersCollection = new NumbersCollection([3, 0, -1, 2])
+const sorter = new Sorter(numbersCollection);
 
-console.log(sorter.collection);
+sorter.sort()
+
+
+console.log(numbersCollection.data);
